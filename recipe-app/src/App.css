@@ -1,0 +1,51 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.search-input:focus {
+  border-color: #6c757d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+}
+
+.recipe-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-recipes {
+  text-align: center;
+  color: #6c757d;
+}
