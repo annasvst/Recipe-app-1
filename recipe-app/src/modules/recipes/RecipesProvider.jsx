@@ -1,4 +1,4 @@
-import { createContext, useReducer, useContext, act } from "react";
+import { createContext, useReducer, useContext } from "react";
 
 export const RECİPE_ACTİON = {
   update: "update",
@@ -25,7 +25,7 @@ function userReducer(state, action) {
     case RECİPE_ACTİON.update: {
       const newRecipes = action.payload.filter(
         (payloadItem) =>
-          !state.some((recipe) => recipe.idMeaal === payloadItem.idMeaal),
+          !state.some((recipe) => recipe.idMeaal === payloadItem.idMeal),
       );
       return [...newRecipes, ...state];
     }
@@ -37,5 +37,5 @@ function userReducer(state, action) {
   }
 }
 
-export const useRecipes = () => useContext(RecipesContext);
+export const useRecipesState = () => useContext(RecipesContext);
 export const useRecipesDispatch = () => useContext(RecipesDispatchContext);
